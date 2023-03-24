@@ -17,7 +17,6 @@
   --fs-body: 1.6rem;
   --fs-heading: 4rem;
   --fs-heading-desktop: 5.6rem;
-  /* --fs-heading-sm: clamp(3rem, 05rem + 4vw, 4rem); clamp está relacionado ao ajuste de texto no box */
 }
 
 body {
@@ -75,7 +74,7 @@ main {
   font-size: var(--fs-heading);
   line-height: 4.8rem;
   font-weight: 800;
-  position: absolute;   /* QUANDO HOUVER SOBREPOSIÇÃO DE ELEMENTOS */
+  position: absolute;  
   bottom: 5.2rem;
   left: 2.8rem;
   display: flex;
@@ -91,11 +90,11 @@ main {
   color: var(--fc-secondary-dark);
   border-radius: 2rem;
   padding: 0.7rem 1.6rem;
-  width: fit-content;  /* fit content é encaixar */
+  width: fit-content;  
 }
 
 .card img {
-  object-fit: cover;     /* tag é usada para modificar a imagem na box */
+  object-fit: cover;    
   height: 41.6rem;
   transition: all 300ms;
   filter: blur(0.5px) brightness(0.7) contrast(0.6);
@@ -140,9 +139,8 @@ main {
   }
 
   main{
-    /*grid-template-columns ajusta o tamanho das colunas */
     grid-template-areas: "contA contB contB" 
-    "contC contC ContD";  /* posicionamento de grid com suas respectivas sintaxes*/
+    "contC contC ContD";  
   }
 
   main div:nth-child(1){
